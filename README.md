@@ -188,7 +188,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(m+n) 21. Merge Two Sorted Lists - <https://leetcode.com/problems/merge-two-sorted-lists/>
 - [x] O(m\*n) 23. Merge K Sorted Lists - <https://leetcode.com/problems/merge-k-sorted-lists/>
 - [x] O(n) 19. Remove Nth Node From End Of List - <https://leetcode.com/problems/remove-nth-node-from-end-of-list/>
-- [ ] Reorder List - <https://leetcode.com/problems/reorder-list/>
+- [x] O(n) 143. Reorder List - <https://leetcode.com/problems/reorder-list/>
 
 ### Matrix
 
@@ -215,7 +215,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 104. Maximum Depth of Binary Tree - <https://leetcode.com/problems/maximum-depth-of-binary-tree/>
 - [x] O(n) 100. Same Tree - <https://leetcode.com/problems/same-tree/>
 - [x] O(n) 226. Invert/Flip Binary Tree - <https://leetcode.com/problems/invert-binary-tree/>
-- [ ] Binary Tree Maximum Path Sum - <https://leetcode.com/problems/binary-tree-maximum-path-sum/>
+- [x] O(n) 124. Binary Tree Maximum Path Sum - <https://leetcode.com/problems/binary-tree-maximum-path-sum/>
 - [ ] Binary Tree Level Order Traversal - <https://leetcode.com/problems/binary-tree-level-order-traversal/>
 - [ ] Serialize and Deserialize Binary Tree - <https://leetcode.com/problems/serialize-and-deserialize-binary-tree/>
 - [ ] Subtree of Another Tree - <https://leetcode.com/problems/subtree-of-another-tree/>
@@ -229,7 +229,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 
 ### Heap
 
-- [ ] Merge K Sorted Lists - <https://leetcode.com/problems/merge-k-sorted-lists/>
+- [x] O(n\*logn) 23. Merge K Sorted Lists - <https://leetcode.com/problems/merge-k-sorted-lists/>
 - [ ] Top K Frequent Elements - <https://leetcode.com/problems/top-k-frequent-elements/>
 - [ ] Find Median from Data Stream - <https://leetcode.com/problems/find-median-from-data-stream/>
 
