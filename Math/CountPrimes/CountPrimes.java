@@ -1,12 +1,12 @@
-package CodeTEST.CountPrimes;
+package Math.CountPrimes;
 // 204. Count Primes
 // https://leetcode.com/problems/count-primes/
 
 
 import java.util.Arrays;
 
+// O(n*logn) 에라토스테네스의 체
 class Solution {
-
     public int countPrimes(int n) {
         boolean[] primes = new boolean[n];
         Arrays.fill(primes, true);

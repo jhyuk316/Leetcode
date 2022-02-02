@@ -1,24 +1,20 @@
-package CodeTEST.CheckIfAllCharactersHaveEqualNumberOfOccurrences;
+package String.CheckIfAllCharactersHaveEqualNumberOfOccurrences;
 // 1941. Check if All Characters Have Equal Number of Occurrences
 // https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/
 
 
-// O(n)
+// O(n) 문자 카운터 후 판단
 class Solution {
     public boolean areOccurrencesEqual(String s) {
         int[] countChar = new int[26];
-
         int intA = 'a';
 
         for (int i = 0; i < s.length(); ++i) {
             countChar[s.charAt(i) - intA] += 1;
         }
 
-        int count = 0;
+        int count = countChar[s.charAt(0) - intA];
         for (int i = 0; i < 26; ++i) {
-            if (count == 0 && countChar[i] != 0) {
-                count = countChar[i];
-            }
             if (countChar[i] != 0 && count != countChar[i]) {
                 return false;
             }

@@ -1,4 +1,4 @@
-package CodeTEST.PartitionLabels;
+package Array.PartitionLabels;
 // 763. Partition Labels
 // https://leetcode.com/problems/partition-labels/
 
@@ -9,7 +9,35 @@ import java.util.Comparator;
 import java.util.List;
 
 
+// O(n) 해답 Two-Pointer
 class Solution {
+    public List<Integer> partitionLabels(String s) {
+        int[] endChar = new int[26];
+
+        for (int i = 0; i < s.length(); ++i) {
+            endChar[s.charAt(i) - 'a'] = i;
+        }
+
+        List<Integer> result = new ArrayList<>();
+
+        int end = -1;
+        int start = 0;
+        for (int i = 0; i < s.length(); ++i) {
+            end = Math.max(end, endChar[s.charAt(i) - 'a']);
+
+            if (i == end) {
+                result.add(end - start + 1);
+                start = end + 1;
+            }
+        }
+
+        return result;
+    }
+}
+
+
+// O(n) Intervals를 만들고 합쳐서 그 결과를 반환.
+class Solution1 {
     public List<Integer> partitionLabels(String s) {
         int[] startChar = new int[26];
         int[] endChar = new int[26];
