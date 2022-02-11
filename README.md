@@ -36,6 +36,8 @@
   - [Heap](#heap-1)
   - [Math](#math)
   - [backtracking](#backtracking)
+  - [Implement](#implement)
+- [TODO](#todo)
 
 ## 알고리즘 전략
 
@@ -242,6 +244,9 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 반복 O, 재귀 X 344. Reverse String <https://leetcode.com/problems/reverse-string/>
 - [x] O(n) 977. Squares of a Sorted Array <https://leetcode.com/problems/squares-of-a-sorted-array/>
 - [x] O(n) 134. <https://leetcode.com/problems/gas-station/>
+- [x] O(n) 763. Partition Labels <https://leetcode.com/problems/partition-labels/>
+- [x] O(n) 75. Sort Colors <https://leetcode.com/problems/sort-colors/>
+- [x] O(n) 930. Binary Subarrays With Sum <https://leetcode.com/problems/binary-subarrays-with-sum/>
 
 ### Binary
 
@@ -259,12 +264,16 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 ### Linked List
 
 - [x] O(n) 2. Add Two Numbers <https://leetcode.com/problems/add-two-numbers/>
+- [x] O(n) 1290. Convert Binary Number in a Linked List to Integer <https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/>
 
 ### Matrix
 
 ### String
 
+- [x] O(m\*n) 28. Implement strStr() <https://leetcode.com/problems/implement-strstr/>
 - [x] O(n\*logn) 179. Largest Number <https://leetcode.com/problems/largest-number/>
+- [x] O(n) 1941. Check if All Characters Have Equal Number of Occurrences <https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/>
+- [x] O(n) 13. Roman to Integer <https://leetcode.com/problems/roman-to-integer/>
 
 ### Tree
 
@@ -274,7 +283,22 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 
 - [x] O(logn) 69. Sqrt(x) <https://leetcode.com/problems/sqrtx/>
 - [x] O(n) 224. Basic Calculator <https://leetcode.com/problems/basic-calculator/>
+- [x] O(n\*logn) 204. Count Primes <https://leetcode.com/problems/count-primes/>
 
 ### backtracking
 
 - [x] 52. N-Queens II <https://leetcode.com/problems/n-queens-ii/>
+
+### Implement
+
+- [x] 155. Min Stack <https://leetcode.com/problems/min-stack/>
+- [ ] 1146. Snapshot Array <https://leetcode.com/problems/snapshot-array/>
+
+---
+
+## TODO
+
+- 395번 다듬기.
+- 28번 마무리.
+- 143번 해석.
+- 1146번 풀기.

@@ -1,13 +1,36 @@
 # 424. Longest Repeating Character Replacement
 # https://leetcode.com/problems/longest-repeating-character-replacement/
 
+from collections import defaultdict
+from email.policy import default
 from typing import Dict
 
 
-# O(n)
+# O(n) two-pointer
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        maxLenth = 0
+        maxLength = 0
+        cMap = defaultdict(int)
+
+        left = 0
+        maxCount = 0
+        for right, c in enumerate(s):
+            cMap[c] += 1
+            maxCount = max(maxCount, cMap[c])
+
+            while right - left + 1 - maxCount > k:
+                cMap[s[left]] -= 1
+                left += 1
+
+            maxLength = max(maxLength, right - left + 1)
+
+        return maxLength
+
+
+# O(n) two-pointer 매번 최댓값 찾고 검사. 느림.
+class Solution1:
+    def characterReplacement(self, s: str, k: int) -> int:
+        maxLength = 0
         cMap = {}
 
         left = 0
@@ -34,14 +57,24 @@ class Solution:
 
             print(maxChar)
 
-            maxLenth = max(maxLenth, length)
+            maxLength = max(maxLength, length)
 
-        return maxLenth
+        return maxLength
+
+
+def testSol(func, input, output):
+    res = func(*input)
+    if res == output:
+        print(f"O : {res}")
+    else:
+        print(f"X : {res}	excpet : {output}")
 
 
 if __name__ == "__main__":
     sol = Solution()
 
-    print(sol.characterReplacement("ABAB", 2))
-    print(sol.characterReplacement("AABABBA", 1))
-    print(sol.characterReplacement("ABBBABAAA", 2))
+    testSol(sol.characterReplacement, ("ABAB", 2), 4)
+    testSol(sol.characterReplacement, ("AABABBA", 1), 4)
+    testSol(sol.characterReplacement, ("ABBBABAAA", 2), 6)
+    testSol(sol.characterReplacement, ("ABBBABAAA", 2), 5)
+

@@ -2,18 +2,63 @@ package Array.searchinrotatedsortedarray;
 // 33. Search in Rotated Sorted Array
 // https://leetcode.com/problems/search-in-rotated-sorted-array/
 
+
+// O(logn) 바이너리 서치로 최소값 위치 찾고, 로테이션 보정 바이너리 서치
 class Solution {
+    public int search(int[] nums, int target) {
+        int rotation = findMin(nums);
+        return binarySearch(nums, target, rotation);
+    }
+
+    public int findMin(int[] nums) {
+        int left = 0;
+        int right = nums.length - 1;
+
+        while (left < right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] < nums[right]) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return left;
+    }
+
+    public int binarySearch(int[] nums, int target, int rotation) {
+        int left = 0;
+        int right = nums.length - 1;
+
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            int rotMid = (mid + rotation) % nums.length;
+
+            if (target == nums[rotMid]) {
+                return rotMid;
+            } else if (target > nums[rotMid]) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+
+        return -1;
+    }
+}
+
+
+// O(logn) 바이너리 서치로 최소값 위치를 찾고 좌우 분할해서 바이너리 서치
+class Solution1 {
     public int search(int[] nums, int target) {
         int minPos = findMin(nums);
 
-        if (minPos == 0) {
-            return binarySearch(nums, target, minPos, nums.length - 1);
+        int leftTemp = binarySearch(nums, target, 0, minPos - 1);
+        int rightTemp = binarySearch(nums, target, minPos, nums.length - 1);
+        if (leftTemp != -1) {
+            return leftTemp;
         }
-
-        if (nums[minPos] <= target && nums[nums.length - 1] >= target) {
-            return binarySearch(nums, target, minPos, nums.length - 1);
-        } else if (nums[0] <= target && nums[minPos - 1] >= target) {
-            return binarySearch(nums, target, 0, minPos - 1);
+        if (rightTemp != -1) {
+            return rightTemp;
         }
 
         return -1;
@@ -22,24 +67,15 @@ class Solution {
     public int findMin(int[] nums) {
         int left = 0;
         int right = nums.length - 1;
-        int mid = (left + right) / 2;
-
-        if (nums[left] < nums[right]) {
-            return left;
-        }
 
         while (left < right) {
-            mid = (left + right) / 2;
-
-            if (nums[left] > nums[mid]) {
+            int mid = (left + right) / 2;
+            if (nums[mid] < nums[right]) {
                 right = mid;
-            } else if (nums[right] < nums[mid]) {
-                left = mid + 1;
             } else {
-                return left;
+                left = mid + 1;
             }
         }
-
         return left;
     }
 
