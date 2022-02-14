@@ -250,6 +250,8 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 
 ### Binary
 
+- [x] O(n) 260. Single Number III <https://leetcode.com/problems/single-number-iii/>
+
 ### Dynamic Programming
 
 - [x] O(n^2) 712. Minimum ASCII Delete Sum for Two Strings <https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/>
@@ -284,6 +286,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(logn) 69. Sqrt(x) <https://leetcode.com/problems/sqrtx/>
 - [x] O(n) 224. Basic Calculator <https://leetcode.com/problems/basic-calculator/>
 - [x] O(n\*logn) 204. Count Primes <https://leetcode.com/problems/count-primes/>
+- [x] O(n) 789. Escape The Ghosts <https://leetcode.com/problems/escape-the-ghosts/>
 
 ### backtracking
 
