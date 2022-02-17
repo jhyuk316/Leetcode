@@ -247,6 +247,8 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 763. Partition Labels <https://leetcode.com/problems/partition-labels/>
 - [x] O(n) 75. Sort Colors <https://leetcode.com/problems/sort-colors/>
 - [x] O(n) 930. Binary Subarrays With Sum <https://leetcode.com/problems/binary-subarrays-with-sum/>
+- [x] O(n) 448. Find All Numbers Disappeared in an Array <https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/>
+- [x] O(logn) 34. Find First and Last Position of Element in Sorted Array <https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/>
 
 ### Binary
 
