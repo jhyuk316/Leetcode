@@ -16,7 +16,9 @@ class Solution {
         int maxCount = 0;
         while (right < s.length()) {
             countChar[s.charAt(right) - 'A']++;
+            // 현재 윈도우의 최빈값을 찾아야 함.
             // maxCount = Arrays.stream(countChar).max().orElse(0);
+            // 하지만 최댓값이 갱신 되지 않으면 maxLength는 갱신 되지 않을 것이므로 굳이 검사할 필요가 없음.
             maxCount = Math.max(maxCount, countChar[s.charAt(right) - 'A']);
             while (right - left - maxCount > k) {
                 left++;
