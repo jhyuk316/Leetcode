@@ -6,6 +6,24 @@ from typing import List
 # O(n)
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
+        result = nums[0]
+
+        temp = 0
+        for num in nums:
+            temp = temp * num if temp != 0 else num
+            result = max(result, temp)
+
+        temp = 0
+        for num in reversed(nums):
+            temp = temp * num if temp != 0 else num
+            result = max(result, temp)
+
+        return result
+
+
+# O(n)
+class Solution1:
+    def maxProduct(self, nums: List[int]) -> int:
         if len(nums) == 1:
             return nums[0]
 
