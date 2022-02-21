@@ -258,6 +258,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 ### Dynamic Programming
 
 - [x] O(n^2) 712. Minimum ASCII Delete Sum for Two Strings <https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/>
+- [x] O(n^2) 1035. Uncrossed Lines <https://leetcode.com/problems/uncrossed-lines/>
 
 ### Graph
 
@@ -279,6 +280,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n\*logn) 179. Largest Number <https://leetcode.com/problems/largest-number/>
 - [x] O(n) 1941. Check if All Characters Have Equal Number of Occurrences <https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/>
 - [x] O(n) 13. Roman to Integer <https://leetcode.com/problems/roman-to-integer/>
+- [x] O(n) 395. Longest Substring with At Least K Repeating Characters <https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/>
 
 ### Tree
 
@@ -305,6 +307,4 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 ## TODO
 
 - 395번 다듬기.
-- 28번 마무리.
-- 143번 해석.
 - 1146번 풀기.
