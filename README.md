@@ -259,6 +259,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 
 - [x] O(n^2) 712. Minimum ASCII Delete Sum for Two Strings <https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/>
 - [x] O(n^2) 1035. Uncrossed Lines <https://leetcode.com/problems/uncrossed-lines/>
+- [x] O(N) 45. Jump Game II <https://leetcode.com/problems/jump-game-ii/>
 
 ### Graph
 
@@ -273,6 +274,8 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 1290. Convert Binary Number in a Linked List to Integer <https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/>
 
 ### Matrix
+
+- [x] O(M\*N) 661. Image Smoother <https://leetcode.com/problems/image-smoother/>
 
 ### String
 
