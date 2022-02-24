@@ -250,6 +250,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 448. Find All Numbers Disappeared in an Array <https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/>
 - [x] O(logn) 34. Find First and Last Position of Element in Sorted Array <https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/>
 - [x] O(n\*logn) 1481. Least Number of Unique Integers after K Removals <https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/>
+- [x] O(N) s2078. Two Furthest Houses With Different Colors <https://leetcode.com/problems/two-furthest-houses-with-different-colors/>
 
 ### Binary
 
