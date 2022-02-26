@@ -1,9 +1,7 @@
-package CodeTest.TwoFurthestHousesWithDifferentColors;
+package Array.TwoFurthestHousesWithDifferentColors;
 // 2078. Two Furthest Houses With Different Colors
 // https://leetcode.com/problems/two-furthest-houses-with-different-colors/
 
-import java.util.HashMap;
-import java.util.Map;
 
 // O(N)
 class Solution {
@@ -29,8 +27,7 @@ class Solution {
 }
 
 
-// brute-force
-// O(N^2)
+// O(N^2) brute-force
 class Solution1 {
     public int maxDistance(int[] colors) {
         int maxLength = 0;

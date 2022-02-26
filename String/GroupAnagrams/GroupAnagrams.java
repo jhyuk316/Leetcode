@@ -26,7 +26,40 @@ class Solution {
         }
 
         System.out.println(group);
-        List<List<String>> res = new ArrayList<>(group.values());
+        return new ArrayList<>(group.values());
+    }
+}
+
+
+// O(M*N) 문자를 소수에 대입하여 해쉬화. 해쉬 충돌을 피하긴 어려움.
+class Solution2 {
+    public List<List<String>> groupAnagrams(String[] strs) {
+        Map<Integer, List<String>> group = new HashMap<>();
+
+        for (String str : strs) {
+            int key = makeKey(str);
+
+            if (!group.containsKey(key)) {
+                group.put(key, new ArrayList<>());
+            }
+            group.get(key).add(str);
+        }
+
+        System.out.println(group);
+        return new ArrayList<>(group.values());
+    }
+
+    private int makeKey(String str) {
+        int[] prime = new int[] {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
+                67, 71, 73, 79, 83, 89, 97, 101};
+        int mod = 2147483647;
+
+        int res = 1;
+        for (char c : str.toCharArray()) {
+            res *= prime[c - 'a'];
+            res %= mod;
+        }
+
         return res;
     }
 }
@@ -46,8 +79,7 @@ class Solution1 {
         }
 
         System.out.println(group);
-        List<List<String>> res = new ArrayList<>(group.values());
-        return res;
+        return new ArrayList<>(group.values());
     }
 
     private int[] makeKay(String str) {
