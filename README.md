@@ -250,7 +250,8 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 448. Find All Numbers Disappeared in an Array <https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/>
 - [x] O(logn) 34. Find First and Last Position of Element in Sorted Array <https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/>
 - [x] O(n\*logn) 1481. Least Number of Unique Integers after K Removals <https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/>
-- [x] O(N) s2078. Two Furthest Houses With Different Colors <https://leetcode.com/problems/two-furthest-houses-with-different-colors/>
+- [x] O(N) 2078. Two Furthest Houses With Different Colors <https://leetcode.com/problems/two-furthest-houses-with-different-colors/>
+- [x] O(N) 795. Number of Subarrays with Bounded Maximum <https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/>
 
 ### Binary
 
@@ -273,10 +274,12 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 
 - [x] O(n) 2. Add Two Numbers <https://leetcode.com/problems/add-two-numbers/>
 - [x] O(n) 1290. Convert Binary Number in a Linked List to Integer <https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/>
+- [x] O(M+N) 160. Intersection of Two Linked Lists <https://leetcode.com/problems/intersection-of-two-linked-lists/>
 
 ### Matrix
 
 - [x] O(M\*N) 661. Image Smoother <https://leetcode.com/problems/image-smoother/>
+- [x] O(M\*N) 2017. Grid Game <https://leetcode.com/problems/grid-game/>
 
 ### String
 
