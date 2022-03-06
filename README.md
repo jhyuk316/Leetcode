@@ -218,7 +218,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 100. Same Tree - <https://leetcode.com/problems/same-tree/>
 - [x] O(n) 226. Invert/Flip Binary Tree - <https://leetcode.com/problems/invert-binary-tree/>
 - [x] O(n) 124. Binary Tree Maximum Path Sum - <https://leetcode.com/problems/binary-tree-maximum-path-sum/>
-- [ ] Binary Tree Level Order Traversal - <https://leetcode.com/problems/binary-tree-level-order-traversal/>
+- [x] O(N) 102. Binary Tree Level Order Traversal - <https://leetcode.com/problems/binary-tree-level-order-traversal/>
 - [ ] Serialize and Deserialize Binary Tree - <https://leetcode.com/problems/serialize-and-deserialize-binary-tree/>
 - [ ] Subtree of Another Tree - <https://leetcode.com/problems/subtree-of-another-tree/>
 - [ ] Construct Binary Tree from Preorder and Inorder Traversal - <https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/>
@@ -279,7 +279,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 ### Matrix
 
 - [x] O(M\*N) 661. Image Smoother <https://leetcode.com/problems/image-smoother/>
-- [x] O(M\*N) 2017. Grid Game <https://leetcode.com/problems/grid-game/>
+- [x] O(N) 2017. Grid Game <https://leetcode.com/problems/grid-game/>
 
 ### String
 
