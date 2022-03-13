@@ -1,9 +1,10 @@
-package CodeTest.ChampagneTower;
+package DynamicProgramming.ChampagneTower;
 // 799. Champagne Tower
 // https://leetcode.com/problems/champagne-tower/
 
 import java.util.Arrays;
 
+// O(N^2)
 class Solution {
     public double champagneTower(int poured, int query_row, int query_glass) {
         double[][] glass = new double[query_row + 1][query_row + 1];

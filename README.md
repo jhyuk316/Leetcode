@@ -262,6 +262,8 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n^2) 712. Minimum ASCII Delete Sum for Two Strings <https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/>
 - [x] O(n^2) 1035. Uncrossed Lines <https://leetcode.com/problems/uncrossed-lines/>
 - [x] O(N) 45. Jump Game II <https://leetcode.com/problems/jump-game-ii/>
+- [x] O(N^2) 799. Champagne Tower <https://leetcode.com/problems/champagne-tower/>
+- [x] O(N\*logN) 740. Delete and Earn <https://leetcode.com/problems/delete-and-earn/>
 
 ### Graph
 
@@ -315,3 +317,5 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 
 - 395번 다듬기.
 - 1146번 풀기.
+- 799, 740 정리.
+-
