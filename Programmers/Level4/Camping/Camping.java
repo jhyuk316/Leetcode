@@ -1,6 +1,6 @@
-package CodeTEST.programers.Camping;
+package Programmers.Level4.Camping;
 // 캠핑
-//
+// https://programmers.co.kr/learn/courses/30/lessons/1833
 
 import java.util.Arrays;
 

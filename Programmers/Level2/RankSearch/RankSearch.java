@@ -1,16 +1,100 @@
-package CodeTEST.programers.RankSearch;
+package Programmers.Level2.RankSearch;
 // 순위 검색
 // https://programmers.co.kr/learn/courses/30/lessons/72412
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 
-// 효율성 0점 젠장
+//
 class Solution {
+    Map<String, List<Integer>> infoMap;
+
+    public int[] solution(String[] info, String[] query) {
+        infoMap = new HashMap<>();
+        for (String language : new String[] {"cpp", "java", "python", "-"}) {
+            for (String job : new String[] {"backend", "frontend", "-"}) {
+                for (String career : new String[] {"junior", "senior", "-"}) {
+                    for (String food : new String[] {"chicken", "pizza", "-"}) {
+                        infoMap.put(language + job + career + food, new ArrayList<>());
+                    }
+                }
+            }
+        }
+
+        for (int i = 0; i < info.length; ++i) {
+            String[] infos = info[i].split(" ");
+            for (String language : new String[] {infos[0], "-"}) {
+                for (String job : new String[] {infos[1], "-"}) {
+                    for (String career : new String[] {infos[2], "-"}) {
+                        for (String food : new String[] {infos[3], "-"}) {
+                            infoMap.get(language + job + career + food)
+                                    .add(Integer.parseInt(infos[4]));
+                        }
+                    }
+                }
+            }
+        }
+
+        for (List<Integer> scores : infoMap.values()) {
+            scores.sort(Comparator.naturalOrder());
+        }
+
+        // System.out.println(infoMap);
+
+        int[] answer = new int[query.length];
+        for (int i = 0; i < query.length; ++i) {
+            answer[i] = countInfo(query[i]);
+        }
+        return answer;
+    }
+
+    private int countInfo(String query) {
+        String[] curQuery = query.split(" and ");
+        String[] temp = curQuery[3].split(" ");
+        String food = temp[0];
+        int score = Integer.parseInt(temp[1]);
+
+        List<Integer> scoreList = infoMap.get(curQuery[0] + curQuery[1] + curQuery[2] + food);
+        if (scoreList == null) {
+            return 0;
+        }
+
+        // int count = 0;
+        // for (int sco : scoreList) {
+        // if (sco >= score) {
+        // count++;
+        // }
+        // }
+        return scoreList.size() - find(scoreList, score);
+    }
+
+    private int find(List<Integer> scoreList, int target) {
+        int left = 0;
+        int right = scoreList.size() - 1;
+        int first = scoreList.size();
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (scoreList.get(mid) < target) {
+                left = mid + 1;
+            } else if (scoreList.get(mid) >= target) {
+                first = mid;
+                right = mid - 1;
+            }
+        }
+        return first;
+    }
+}
+
+
+// 효율성 0점 젠장
+class Solution1 {
     Map<String, Set<Integer>> language;
     Map<String, Set<Integer>> jobs;
     Map<String, Set<Integer>> career;

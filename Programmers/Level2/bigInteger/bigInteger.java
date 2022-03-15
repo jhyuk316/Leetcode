@@ -1,4 +1,4 @@
-package CodeTEST.programers.bigInteger;
+package Programmers.Level2.bigInteger;
 // 가장 큰 수
 // https://programmers.co.kr/learn/courses/30/lessons/42746
 

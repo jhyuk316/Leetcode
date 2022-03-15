@@ -1,4 +1,4 @@
-package CodeTEST.programers.KPrime;
+package Programmers.Level2.KPrime;
 // k진수에서 소수 개수 구하기
 // https://programmers.co.kr/learn/courses/30/lessons/92335
 

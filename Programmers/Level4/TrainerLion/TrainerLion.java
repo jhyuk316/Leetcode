@@ -1,12 +1,13 @@
-package CodeTEST.programers.TrainerLion;
+package Programmers.Level4.TrainerLion;
 // 몸짱 트레이너 라이언의 고민
-//
-
+// https://programmers.co.kr/learn/courses/30/lessons/1838
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
+// 해결 못함
 class Solution {
     public int solution(int n, int m, int[][] timetable) {
         int answer = 0;
@@ -69,8 +70,6 @@ class Solution {
     private int distance(int[] a, int[] b) {
         return Math.abs(a[0] - b[0]) + Math.abs(a[1] - b[1]);
     }
-
-
 }
 
 

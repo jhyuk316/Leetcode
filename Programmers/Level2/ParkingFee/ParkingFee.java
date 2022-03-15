@@ -1,4 +1,4 @@
-package CodeTEST.programers.ParkingFee;
+package Programmers.Level2.ParkingFee;
 // 주차 요금 계산
 // https://programmers.co.kr/learn/courses/30/lessons/92341
 

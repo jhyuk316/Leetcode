@@ -1,4 +1,4 @@
-package CodeTEST.programers.CheckLength;
+package Programmers.Level2.CheckDistance;
 // 거리두기 확인하기
 // https://programmers.co.kr/learn/courses/30/lessons/81302
 
@@ -9,12 +9,12 @@ class Solution {
     public int[] solution(String[][] places) {
         int[] answer = new int[places.length];
         for (int i = 0; i < places.length; ++i) {
-            answer[i] = checkLength(places[i]);
+            answer[i] = checkDistance(places[i]);
         }
         return answer;
     }
 
-    private int checkLength(String[] place) {
+    private int checkDistance(String[] place) {
         char[][] placeArr = new char[5][5];
         for (int i = 0; i < place.length; ++i) {
             placeArr[i] = place[i].toCharArray();
@@ -58,7 +58,7 @@ class Solution {
 }
 
 
-public class CheckLength {
+public class CheckDistance {
     public static void main(String[] args) {
         testSol(new String[][] {{"POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"},}, new int[] {1});
         testSol(new String[][] {{"POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"},
