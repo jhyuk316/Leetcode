@@ -301,6 +301,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 224. Basic Calculator <https://leetcode.com/problems/basic-calculator/>
 - [x] O(n\*logn) 204. Count Primes <https://leetcode.com/problems/count-primes/>
 - [x] O(n) 789. Escape The Ghosts <https://leetcode.com/problems/escape-the-ghosts/>
+- [x] O(n?) 523. Continuous Subarray Sum - <https://leetcode.com/problems/continuous-subarray-sum/>
 
 ### backtracking
 
@@ -318,4 +319,3 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - 395번 다듬기.
 - 1146번 풀기.
 - 799, 740 정리.
--
