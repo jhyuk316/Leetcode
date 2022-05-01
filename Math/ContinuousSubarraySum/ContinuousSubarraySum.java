@@ -2,11 +2,8 @@ package Math.ContinuousSubarraySum;
 // 523. Continuous Subarray Sum
 // https://leetcode.com/problems/continuous-subarray-sum/
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-
 
 // O(n?) preSum의 나머지 값이 같은 index를 찾기.
 // A % k - B % k = (A - B + k) % k
@@ -14,36 +11,18 @@ import java.util.Map;
 // A % k = B % k
 class Solution {
     public boolean checkSubarraySum(int[] nums, int k) {
-        int[] preSum = new int[nums.length + 1];
-        int temp = 0;
+        int preSum = 0;
+        Map<Integer, Integer> preSumMod = new HashMap<>();
+        preSumMod.put(0, -1);
+
         for (int i = 0; i < nums.length; ++i) {
-            temp += nums[i];
-            preSum[i + 1] = temp;
-        }
-
-        // System.out.println(Arrays.toString(preSum));
-
-        Map<Integer, List<Integer>> preSumMod = new HashMap<>();
-        for (int i = 0; i < preSum.length; ++i) {
-            int key = preSum[i] % k;
+            preSum += nums[i];
+            int key = preSum % k;
             if (!preSumMod.containsKey(key)) {
-                preSumMod.put(key, new ArrayList<>());
-            }
-            preSumMod.get(key).add(i);
-        }
-
-        // System.out.println(preSumMod);
-
-        for (int num : preSumMod.keySet()) {
-            if (preSumMod.get(num).size() >= 2) {
-                // 1 차이가 아닌 index 조합이 있는지 판단.
-                List<Integer> index = preSumMod.get(num);
-                for (int i = 0; i < index.size() - 1; ++i) {
-                    for (int j = i + 1; j < index.size(); ++j) {
-                        if (Math.abs(index.get(i) - index.get(j)) != 1) {
-                            return true;
-                        }
-                    }
+                preSumMod.put(key, i);
+            } else {
+                if (i - preSumMod.get(key) > 1) {
+                    return true;
                 }
             }
         }
