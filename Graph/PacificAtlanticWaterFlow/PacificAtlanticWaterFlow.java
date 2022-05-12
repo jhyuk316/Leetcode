@@ -6,7 +6,58 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// 솔루션, 방향과 DFS검사를 간결하게
 class Solution {
+    int M;
+    int N;
+    int[][] direction = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+
+    public List<List<Integer>> pacificAtlantic(int[][] heights) {
+        M = heights.length;
+        N = heights[0].length;
+
+        boolean[][] isPacific = new boolean[M][N];
+        boolean[][] isAtlantic = new boolean[M][N];
+
+        for (int i = 0; i < M; ++i) {
+            dfs(heights, i, 0, 0, isPacific);
+            dfs(heights, i, N - 1, 0, isAtlantic);
+        }
+        for (int j = 0; j < N; ++j) {
+            dfs(heights, 0, j, 0, isPacific);
+            dfs(heights, M - 1, j, 0, isAtlantic);
+        }
+
+
+        List<List<Integer>> answer = new ArrayList<>();
+        for (int i = 0; i < M; ++i) {
+            for (int j = 0; j < N; ++j) {
+                if (isPacific[i][j] && isAtlantic[i][j]) {
+                    answer.add(List.of(i, j));
+                }
+            }
+        }
+
+        return answer;
+    }
+
+    private void dfs(int[][] heights, int r, int c, int height, boolean[][] map) {
+        if (r < 0 || r >= M || c < 0 || c >= N || map[r][c] || heights[r][c] < height) {
+            return;
+        }
+
+        map[r][c] = true;
+        for (int[] dir : direction) {
+            dfs(heights, r + dir[0], c + dir[1], heights[r][c], map);
+
+        }
+    }
+}
+
+
+// DFS, 섬밖에서부터 점점 높은 곳으로 올라가면서 갈 수 있으면 ture표기
+// visited가 따로 없이 isPacific, isAtlantic을 사용.
+class Solution1 {
     int M;
     int N;
 
@@ -57,85 +108,6 @@ class Solution {
         if (c + 1 < N && heights[r][c + 1] >= heights[r][c]) {
             dfs(heights, r, c + 1, map);
         }
-    }
-}
-
-
-class Solution1 {
-    int M;
-    int N;
-
-    boolean[][] visited;
-    boolean[][] isPacific;
-    boolean[][] isAtlantic;
-
-    public List<List<Integer>> pacificAtlantic(int[][] heights) {
-        M = heights.length;
-        N = heights[0].length;
-
-        visited = new boolean[M][N];
-        isPacific = new boolean[M][N];
-        isAtlantic = new boolean[M][N];
-
-        // isPacific
-        for (int i = 0; i < M; ++i) {
-            dfs(heights, i, 0, true, false);
-        }
-        for (int j = 0; j < N; ++j) {
-            dfs(heights, 0, j, true, false);
-        }
-
-        // isAtlantic
-        visited = new boolean[M][N];
-        for (int i = 0; i < M; ++i) {
-            dfs(heights, i, N - 1, false, true);
-        }
-        for (int j = 0; j < N; ++j) {
-            dfs(heights, M - 1, j, false, true);
-        }
-
-
-        List<List<Integer>> answer = new ArrayList<>();
-
-        for (int i = 0; i < M; ++i) {
-            for (int j = 0; j < N; ++j) {
-                if (isPacific[i][j] && isAtlantic[i][j]) {
-                    answer.add(List.of(i, j));
-                }
-            }
-        }
-
-        return answer;
-    }
-
-    private void dfs(int[][] heights, int r, int c, boolean isPac, boolean isAtl) {
-        // if (r == 0 || c == 0) {
-        // isPacific[r][c] = true;
-        // }
-        // if (r == M - 1 || c == N - 1) {
-        // isAtlantic[r][c] = true;
-        // }
-
-        if (visited[r][c] == true) {
-            return;
-        }
-
-        visited[r][c] = true;
-        isPacific[r][c] |= isPac;
-        isAtlantic[r][c] |= isAtl;
-        if (r - 1 >= 0 && heights[r - 1][c] >= heights[r][c]) {
-            dfs(heights, r - 1, c, isPacific[r][c], isAtlantic[r][c]);
-        }
-        if (r + 1 < M && heights[r + 1][c] >= heights[r][c]) {
-            dfs(heights, r + 1, c, isPacific[r][c], isAtlantic[r][c]);
-        }
-        if (c - 1 >= 0 && heights[r][c - 1] >= heights[r][c]) {
-            dfs(heights, r, c - 1, isPacific[r][c], isAtlantic[r][c]);
-        }
-        if (c + 1 < N && heights[r][c + 1] >= heights[r][c]) {
-            dfs(heights, r, c + 1, isPacific[r][c], isAtlantic[r][c]);
-        }
-        // visited[r][c] = false;
     }
 }
 
