@@ -252,6 +252,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n\*logn) 1481. Least Number of Unique Integers after K Removals <https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/>
 - [x] O(N) 2078. Two Furthest Houses With Different Colors <https://leetcode.com/problems/two-furthest-houses-with-different-colors/>
 - [x] O(N) 795. Number of Subarrays with Bounded Maximum <https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/>
+- [x] O(N) 백준1931. 회의실 배정 <https://www.acmicpc.net/problem/1931>
 
 ### Binary
 
