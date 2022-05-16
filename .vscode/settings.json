@@ -1,5 +1,4 @@
 {
-    "java.project.sourcePaths": [
-        ""
-    ],
+  "java.project.sourcePaths": [""],
+  "java.format.settings.url": ".vscode/eclipse-java-google-style.xml"
 }
