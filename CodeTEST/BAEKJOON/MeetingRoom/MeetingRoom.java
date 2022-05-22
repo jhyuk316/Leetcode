@@ -10,6 +10,13 @@ import java.util.*;
 
 // 그리드 알고리즘.
 // 끝나는 시간이 가장 빠른 회의를 찾고 그 이후에 가장 빠른 회의를 찾으면 최댓값을 알 수 있음.
+// 증명 - 귀류법
+// 가정 : 가장 짧은 A를 선택하면 나머지 부분(B)이 최댓값이 아니다.
+// A보다 긴 A'를 선택하면 나머지 부분(B')이 최댓값이다.
+// A' 대신 A를 선택해도 최댓값의 나머지 부분(B')를 취할 수 있다.
+// 가장 짧은 A가 최댓값을 가질 수 있으므로 위 명제는 모순이다.
+// 즉, 가장 짧은 A를 선택하면 최댓값이다.
+
 // arrays버전
 class Solution {
     int N;
@@ -31,10 +38,6 @@ class Solution {
             // solve
             Arrays.sort(timeArr,
                     Comparator.<int[]>comparingInt(t -> t[1]).thenComparingInt(t -> t[0]));
-
-            // for (int[] time : timeArr) {
-            // System.out.println(Arrays.toString(time));
-            // }
 
             int lastTime = 0;
             int count = 0;
