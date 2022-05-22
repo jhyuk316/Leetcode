@@ -7,64 +7,55 @@ package Graph.CourseScheduleII;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
+import java.util.Queue;
 
-// 다시 푼것
+// 솔루션 위상정렬
+// Kahn's algorithm
 class Solution {
-    enum State {
-        Yet, Visit, Finish
-    }
-
-    State[] visit;
-    Map<Integer, List<Integer>> courseMap = new HashMap<>();;
-    List<Integer> order = new ArrayList<>();;
-
     public int[] findOrder(int numCourses, int[][] prerequisites) {
-        visit = new State[numCourses];
+        List<List<Integer>> courseGraph = new ArrayList<>();
+        int[] countPre = new int[numCourses];
+        Queue<Integer> queue = new LinkedList<>();
+        List<Integer> result = new ArrayList<>();
 
-        // Making Graph
         for (int i = 0; i < numCourses; ++i) {
-            courseMap.put(i, new ArrayList<>());
+            courseGraph.add(new ArrayList<>());
         }
 
-        for (int[] pre : prerequisites) {
-            courseMap.get(pre[0]).add(pre[1]);
-            // courseMap.get(pre[1]).add(pre[0]);
+        // make graph and count edge
+        for (int[] courses : prerequisites) {
+            courseGraph.get(courses[1]).add(courses[0]);
+            countPre[courses[0]]++;
         }
 
-        // DFS
+        // Set of all nodes with no incoming edge
         for (int i = 0; i < numCourses; ++i) {
-            if (dfs(i) == false) {
-                return new int[] {};
+            if (countPre[i] == 0) {
+                queue.add(i);
+                countPre[i] = -1;
             }
         }
 
-        // check
-        // if (order.size() != numCourses) {
-        // return new int[] {};
-        // }
-        return order.stream().mapToInt(i -> i).toArray();
-    }
+        // Kahn's algorithm
+        while (!queue.isEmpty()) {
+            int course = queue.poll();
+            result.add(course);
 
-    private boolean dfs(int index) {
-        if (visit[index] == State.Finish) {
-            return true;
+            for (int pre : courseGraph.get(course)) {
+                countPre[pre]--;
+                if (countPre[pre] == 0) {
+                    queue.add(pre);
+                    countPre[pre] = -1;
+                }
+            }
         }
 
-        if (visit[index] == State.Visit) {
-            return false;
+        if (result.size() != numCourses) {
+            return new int[] {};
         }
-
-        visit[index] = State.Visit;
-        boolean res = true;
-        for (int next : courseMap.get(index)) {
-            res &= dfs(next);
-        }
-        order.add(index); // 바텀-업 왜지?
-        visit[index] = State.Finish;
-        return res;
+        return result.stream().mapToInt(i -> i).toArray();
     }
 }
 
@@ -109,15 +100,10 @@ class Solution1 {
             return false;
         }
 
-        if (graph.get(node).isEmpty()) {
-            visited[node] = Visit.finish;
-            result.add(node);
-            return false;
-        }
-
         if (visited[node] == Visit.doing) {
             return true;
         }
+
         visited[node] = Visit.doing;
         for (int next : graph.get(node)) {
             if (hasCycle(next) == true) {
