@@ -4,12 +4,52 @@ package Graph.LongestConsecutiveSequence;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+
+
+// O(n) DFS, memoization
+class Solution {
+    Set<Integer> nodes = new HashSet<>();
+    Map<Integer, Integer> visited = new HashMap<>();
+
+    public int longestConsecutive(int[] nums) {
+        // make graph
+        for (int num : nums) {
+            nodes.add(num);
+        }
+
+        // dfs
+        int maxAnswer = 0;
+        for (int num : nums) {
+            maxAnswer = Math.max(maxAnswer, dfs(num));
+        }
+
+        // System.out.println(visited);
+        return maxAnswer;
+    }
+
+    private int dfs(int node) {
+        if (!nodes.contains(node)) {
+            return 0;
+        }
+
+        if (visited.containsKey(node)) {
+            return visited.get(node);
+        }
+
+        int ans = dfs(node + 1) + 1;
+        visited.put(node, ans);
+        return ans;
+    }
+}
+
 
 
 // O(n) dfs, memoization
-class Solution {
+class Solution1 {
     Map<Integer, List<Integer>> graph = new HashMap<>();
     Map<Integer, Integer> memo = new HashMap<>();
 
@@ -50,23 +90,21 @@ class Solution {
 }
 
 
+
 public class LongestConsecutiveSequence {
     public static void main(String[] args) {
-        testSol(List.of(new int[] {100, 4, 200, 1, 3, 2}), 4);
-        testSol(List.of(new int[] {0, 3, 7, 2, 5, 8, 4, 6, 0, 1}), 9);
+        testSol(new int[] {100, 4, 200, 1, 3, 2}, 4);
+        testSol(new int[] {0, 3, 7, 2, 5, 8, 4, 6, 0, 1}, 9);
     }
 
-    static void testSol(List input, Object output) {
-        // todo : input, output match
-        int[] arg1 = (int[]) input.get(0);
-        int out = (int) output;
+    static void testSol(int[] input, int output) {
         Solution sol = new Solution();
         // todo : solution match
-        int res = sol.longestConsecutive(arg1);
-        if (res == out) {
+        int res = sol.longestConsecutive(input);
+        if (res == output) {
             System.out.println("O : " + res);
         } else {
-            System.out.println("x : " + res + "	expect : " + out);
+            System.out.println("x : " + res + "	expect : " + output);
         }
     }
 }
