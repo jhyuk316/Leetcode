@@ -265,11 +265,19 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 45. Jump Game II <https://leetcode.com/problems/jump-game-ii/>
 - [x] O(N^2) 799. Champagne Tower <https://leetcode.com/problems/champagne-tower/>
 - [x] O(N\*logN) 740. Delete and Earn <https://leetcode.com/problems/delete-and-earn/>
+- [x] O(N^2) 1235. Maximum Profit in Job Scheduling - <https://leetcode.com/problems/maximum-profit-in-job-scheduling/>
+- [x] O(N^2) 118. Pascal's Triangle - <https://leetcode.com/problems/pascals-triangle/>
 
 ### Graph
 
 - [x] O(n) 210. Course Schedule II <https://leetcode.com/problems/course-schedule-ii/>
 - [x] O(m\*n) 130. Surrounded Regions <https://leetcode.com/problems/surrounded-regions/>
+- [x] O(M\*N) 684. Redundant Connection - <https://leetcode.com/problems/redundant-connection/>
+- [x] O(M\*N) 547. Number of Provinces - <https://leetcode.com/problems/number-of-provinces/>
+- [x] O(m\*n) 947. Most Stones Removed with Same Row or Column - <https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/>
+- [x] O(M\*N) 1020. Number of Enclaves - <https://leetcode.com/problems/number-of-enclaves/>
+- [x] O(M\*N) 542. 01 Matrix - <https://leetcode.com/problems/01-matrix/>
+- [x] O(M\*N) 994. Rotting Oranges - <https://leetcode.com/problems/rotting-oranges/>
 
 ### Interval
 

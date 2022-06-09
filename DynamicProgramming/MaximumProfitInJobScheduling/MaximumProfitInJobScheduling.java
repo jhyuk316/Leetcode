@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-// DP
+// O(N^2) DP
 // dp[i] = max(dp[-1], temp + profit[i])
 // temp는 겹치지 않는 최대값.
 class Solution {
@@ -44,7 +44,7 @@ class Solution {
 }
 
 
-// time over
+// FAIL - time over
 class Solution1 {
     public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
         int N = startTime.length;
