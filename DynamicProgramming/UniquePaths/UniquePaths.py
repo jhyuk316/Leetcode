@@ -2,8 +2,27 @@
 # https://leetcode.com/problems/unique-paths/
 
 
-# O(n) combination 계산 (m+n-2)Cn if n < m
+# brute-force
 class Solution:
+    def uniquePaths(self, m: int, n: int) -> int:
+        global count
+        count = 1
+
+        def dfs(i, j):
+            if i >= m - 1 or j >= n - 1:
+                return
+            global count
+            count += 1
+            dfs(i + 1, j)
+            dfs(i, j + 1)
+
+        dfs(0, 0)
+
+        return int(count)
+
+
+# O(n) combination 계산 (m+n-2)Cn if n < m
+class Solution3:
     def uniquePaths(self, m: int, n: int) -> int:
         num = m + n - 1
         combi = min(m, n) - 1
@@ -29,7 +48,7 @@ class Solution2:
 
 
 # O(m*n) dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
-class Solution1:
+class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         dp = [[1] * n for _ in range(m)]
 

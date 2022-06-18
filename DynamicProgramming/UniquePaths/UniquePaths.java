@@ -28,18 +28,69 @@ class Solution {
 
 
 // O(n) combination
-class Solution1 {
+class Solution3 {
     public int uniquePaths(int m, int n) {
         int num = m + n - 1;
-        int combi = Math.min(m, n) - 1;
+        int combi = Math.min(m, n);
 
         double result = 1;
-        for (int i = 1; i < combi + 1; ++i) {
+        for (int i = 1; i < combi; ++i) {
             result *= num - i;
             result /= i;
         }
 
         return (int) result;
+    }
+}
+
+
+// DFS memorization
+class Solution2 {
+    int[][] memo;
+
+    public int uniquePaths(int m, int n) {
+        memo = new int[m][n];
+        return dfs(m - 1, n - 1);
+    }
+
+    private int dfs(int i, int j) {
+        if (i <= 0 || j <= 0) {
+            return 1;
+        }
+
+        if (memo[i][j] != 0) {
+            return memo[i][j];
+        }
+
+        memo[i][j] = dfs(i - 1, j) + dfs(i, j - 1);
+        return memo[i][j];
+    }
+}
+
+
+// DFS
+class Solution1 {
+    int count = 1;
+    int N;
+    int M;
+
+    public int uniquePaths(int m, int n) {
+        M = m;
+        N = n;
+        dfs(0, 0);
+
+        return count;
+
+    }
+
+    private void dfs(int i, int j) {
+        if (i >= M - 1 || j >= N - 1) {
+            return;
+        }
+
+        dfs(i + 1, j);
+        dfs(i, j + 1);
+        count += 1;
     }
 }
 
@@ -50,6 +101,7 @@ public class UniquePaths {
         testSol(List.of(3, 2), 3);
         testSol(List.of(8, 20), 657800);
         testSol(List.of(15, 19), 471435600);
+        // testSol(List.of(100, 100), 22750883079422934966181954039568885395604168260154104734000);
     }
 
     static void testSol(List input, Object output) {
