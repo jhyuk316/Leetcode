@@ -38,6 +38,7 @@
   - [backtracking](#backtracking)
   - [Implement](#implement)
 - [TODO](#todo)
+- [출처](#출처)
 
 ## 알고리즘 전략
 
@@ -88,6 +89,13 @@
 
 - 비효율적인 게산을 줄여 효율적으로 해를 찾음.
 - 메모이제이션 - 반복적인 계산의 결과를 저장해 둠으로써 연산을 줄임.
+- DP의 사용 조건
+  - Overlapping Subproblems
+    - 겹치는 부분 문제
+    - 동일한 작은 문제들이 반복하여 나타나는 경우
+  - Optimal Substructure
+    - 최적 부분 구조
+    - 부분 문제의 최적 결과 값을 사용해 전체 문제의 최적 결과를 낼 수 있는 경우
 
 ### 분할 정복(Divide and Conquer)
 
@@ -265,7 +273,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 45. Jump Game II <https://leetcode.com/problems/jump-game-ii/>
 - [x] O(N^2) 799. Champagne Tower <https://leetcode.com/problems/champagne-tower/>
 - [x] O(N\*logN) 740. Delete and Earn <https://leetcode.com/problems/delete-and-earn/>
-- [x] O(N^2) 1235. Maximum Profit in Job Scheduling - <https://leetcode.com/problems/maximum-profit-in-job-scheduling/>
+- [x] O(N\*logN) 1235. Maximum Profit in Job Scheduling - <https://leetcode.com/problems/maximum-profit-in-job-scheduling/>
 - [x] O(N^2) 118. Pascal's Triangle - <https://leetcode.com/problems/pascals-triangle/>
 
 ### Graph
@@ -278,6 +286,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(M\*N) 1020. Number of Enclaves - <https://leetcode.com/problems/number-of-enclaves/>
 - [x] O(M\*N) 542. 01 Matrix - <https://leetcode.com/problems/01-matrix/>
 - [x] O(M\*N) 994. Rotting Oranges - <https://leetcode.com/problems/rotting-oranges/>
+- [x] O(M\*N) 329. Longest Increasing Path in a Matrix - <https://leetcode.com/problems/longest-increasing-path-in-a-matrix/>
 
 ### Interval
 
@@ -328,3 +337,14 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - 395번 다듬기.
 - 1146번 풀기.
 - 799, 740 정리.
+
+---
+
+## 출처
+
+- New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time - <https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU>
+- DP for Beginners - <https://leetcode.com/discuss/general-discussion/662866/Dynamic-Programming-for-Practice-Problems-Patterns-and-Sample-Solutions>
+- Graph For Beginners - <https://leetcode.com/discuss/study-guide/655708/Graph-For-Beginners-Problems-or-Pattern-or-Sample-Solutions>
+- Greedy for Beginners - <https://leetcode.com/discuss/study-guide/669996/Greedy-for-Beginners-Problems-or-Sample-solutions>
+- Top Google Questions - <http://libaoj.in/LeetCode-Solutions/Google/>
+- 알고리즘 - Dynamic Programming(동적 계획법) - <https://hongjw1938.tistory.com/47>
