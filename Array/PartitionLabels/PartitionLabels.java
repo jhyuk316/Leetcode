@@ -6,11 +6,50 @@ package Array.PartitionLabels;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+//
+class Solution {
+    public List<Integer> partitionLabels(String s) {
+        List<Integer> result = new ArrayList<>();
+        Map<Character, int[]> charMap = new HashMap<>();
+
+        for (int i = 0; i < s.length(); ++i) {
+            if (!charMap.containsKey(s.charAt(i))) {
+                charMap.put(s.charAt(i), new int[] {i, i});
+            }
+            charMap.get(s.charAt(i))[1] = i;
+        }
+
+        charMap.forEach((c, i) -> System.out.println(c + Arrays.toString(i)));
+
+        List<int[]> intervals = new ArrayList<>(charMap.values());
+        intervals.sort((i1, i2) -> i1[0] - i2[0]);
+
+
+        int tempStart = intervals.get(0)[0];
+        int tempEnd = intervals.get(0)[1];
+        for (int[] interval : intervals) {
+            if (interval[0] > tempEnd) {
+                result.add(tempEnd - tempStart);
+                tempStart = interval[0];
+                tempEnd = interval[1];
+            } else {
+                tempEnd = Math.max(tempEnd, interval[1]);
+            }
+        }
+        result.add(s.length() - tempStart);
+
+        System.out.println(result);
+        return result;
+    }
+}
 
 
 // O(n) 해답 Two-Pointer
-class Solution {
+class Solution2 {
     public List<Integer> partitionLabels(String s) {
         int[] endChar = new int[26];
 
