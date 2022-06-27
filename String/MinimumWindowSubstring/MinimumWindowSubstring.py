@@ -7,8 +7,84 @@
 복잡도도 정확히 계산을 못하겠음.
 """
 
-# O(n+m)? O(mn)?
+from collections import defaultdict
+
+# two-pointer
+# 공간 최적화
 class Solution:
+    def minWindow(self, s: str, t: str) -> str:
+        tDict = defaultdict(int)
+        for c in t:
+            tDict[c] += 1
+
+        tCount = len(tDict)
+
+        left = 0
+        right = 0
+        maxLength = 100001
+        res = ""
+        while right < len(s):
+            tDict[s[right]] -= 1
+            if tDict[s[right]] == 0:
+                tCount -= 1
+
+            while tCount == 0:
+                if maxLength > right - left:
+                    res = s[left : right + 1]
+                    maxLength = len(res)
+
+                if tDict[s[left]] == 0:
+                    tCount += 1
+
+                tDict[s[left]] += 1
+                left += 1
+            right += 1
+
+        return res
+
+
+# two-pointer
+class Solution2:
+    def minWindow(self, s: str, t: str) -> str:
+        tDict = defaultdict(int)
+
+        for c in t:
+            tDict[c] += 1
+
+        print(tDict)
+
+        tCount = len(tDict)
+        matchCount = 0
+
+        left = 0
+        right = 0
+        sDict = defaultdict(int)
+        maxLength = 100001
+        res = ""
+        while right < len(s):
+            c1 = s[right]
+            sDict[c1] += 1
+            if c1 in tDict and tDict[c1] == sDict[c1]:
+                matchCount += 1
+
+            if matchCount == tCount:
+                while left <= right and matchCount == tCount:
+                    c2 = s[left]
+                    sDict[c2] -= 1
+                    if c2 in tDict and sDict[c2] < tDict[c2]:
+                        matchCount -= 1
+                    left += 1
+
+                if maxLength > right - left:
+                    maxLength = right - left
+                    res = s[left - 1 : right + 1]
+            right += 1
+
+        return res
+
+
+# O(n+m)? O(mn)? 체크가 느림.
+class Solution1:
     def minWindow(self, s: str, t: str) -> str:
         if len(s) < len(t):
             return ""
