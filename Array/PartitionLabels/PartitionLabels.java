@@ -48,7 +48,8 @@ class Solution {
 }
 
 
-// O(n) 해답 Two-Pointer
+// O(n) 해답 Greedy
+// Activity selection problem 유사
 class Solution2 {
     public List<Integer> partitionLabels(String s) {
         int[] endChar = new int[26];
