@@ -289,6 +289,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(M\*N) 329. Longest Increasing Path in a Matrix - <https://leetcode.com/problems/longest-increasing-path-in-a-matrix/>
 - [x] O(N) 1376. Time Needed to Inform All Employees - <https://leetcode.com/problems/time-needed-to-inform-all-employees/>
 - [x] O(N) 690. Employee Importance - <https://leetcode.com/problems/employee-importance/>
+- [x] O(N) 1319. Number of Operations to Make Network Connected - <https://leetcode.com/problems/number-of-operations-to-make-network-connected/>
 
 ### Interval
 
@@ -331,6 +332,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 
 - [x] 155. Min Stack <https://leetcode.com/problems/min-stack/>
 - [ ] 1146. Snapshot Array <https://leetcode.com/problems/snapshot-array/>
+- [x] 8. String to Integer (atoi) - <https://leetcode.com/problems/string-to-integer-atoi/>
 
 ---
 
