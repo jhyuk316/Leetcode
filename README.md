@@ -261,6 +261,8 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 2078. Two Furthest Houses With Different Colors <https://leetcode.com/problems/two-furthest-houses-with-different-colors/>
 - [x] O(N) 795. Number of Subarrays with Bounded Maximum <https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/>
 - [x] O(N) 백준1931. 회의실 배정 <https://www.acmicpc.net/problem/1931>
+- [x] O(N) 41. First Missing Positive - <https://leetcode.com/problems/first-missing-positive/>
+- [x] O(N) 215. Kth Largest Element in an Array - <https://leetcode.com/problems/kth-largest-element-in-an-array/>
 
 ### Binary
 
@@ -323,6 +325,8 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n\*logn) 204. Count Primes <https://leetcode.com/problems/count-primes/>
 - [x] O(n) 789. Escape The Ghosts <https://leetcode.com/problems/escape-the-ghosts/>
 - [x] O(n?) 523. Continuous Subarray Sum - <https://leetcode.com/problems/continuous-subarray-sum/>
+- [x] O(N) 7. Reverse Integer - <https://leetcode.com/problems/reverse-integer/>
+- [x] 462. Minimum Moves to Equal Array Elements II - <https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/>
 
 ### backtracking
 
