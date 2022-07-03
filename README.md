@@ -277,6 +277,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N\*logN) 740. Delete and Earn <https://leetcode.com/problems/delete-and-earn/>
 - [x] O(N\*logN) 1235. Maximum Profit in Job Scheduling - <https://leetcode.com/problems/maximum-profit-in-job-scheduling/>
 - [x] O(N^2) 118. Pascal's Triangle - <https://leetcode.com/problems/pascals-triangle/>
+- [x] O(N) 376. Wiggle Subsequence - <https://leetcode.com/problems/wiggle-subsequence/>
 
 ### Graph
 
