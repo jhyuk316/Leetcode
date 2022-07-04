@@ -149,6 +149,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(logn) 33. Search in Rotated Sorted Array - <https://leetcode.com/problems/search-in-rotated-sorted-array/>
 - [x] O(n^2) 15. 3Sum - <https://leetcode.com/problems/3sum/>
 - [x] O(n) 11. Container With Most Water - <https://leetcode.com/problems/container-with-most-water/>
+- [x] O(n) 135. Candy - <https://leetcode.com/problems/candy/>
 
 ### Binary
 
@@ -293,6 +294,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 1376. Time Needed to Inform All Employees - <https://leetcode.com/problems/time-needed-to-inform-all-employees/>
 - [x] O(N) 690. Employee Importance - <https://leetcode.com/problems/employee-importance/>
 - [x] O(N) 1319. Number of Operations to Make Network Connected - <https://leetcode.com/problems/number-of-operations-to-make-network-connected/>
+- [x] O(N) 135. Candy - <https://leetcode.com/problems/candy/>
 
 ### Interval
 
