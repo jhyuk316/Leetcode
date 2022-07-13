@@ -280,6 +280,8 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N\*logN) 1235. Maximum Profit in Job Scheduling - <https://leetcode.com/problems/maximum-profit-in-job-scheduling/>
 - [x] O(N^2) 118. Pascal's Triangle - <https://leetcode.com/problems/pascals-triangle/>
 - [x] O(N) 376. Wiggle Subsequence - <https://leetcode.com/problems/wiggle-subsequence/>
+- [x] O(N\*M) 97. Interleaving String - <https://leetcode.com/problems/interleaving-string/>
+- [x] O(N) 1696. Jump Game VI - <https://leetcode.com/problems/jump-game-vi/>
 
 ### Graph
 
@@ -319,6 +321,8 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 395. Longest Substring with At Least K Repeating Characters <https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/>
 
 ### Tree
+
+- [x] O(N) 199. Binary Tree Right Side View - https://leetcode.com/problems/binary-tree-right-side-view/
 
 ### Heap
 

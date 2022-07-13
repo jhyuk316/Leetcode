@@ -5,7 +5,7 @@ package DynamicProgramming.InterleavingString;
 import java.util.Arrays;
 
 
-// 솔루션 DP 6ms
+// O(N*M) 솔루션 DP 6ms
 class Solution {
     public boolean isInterleave(String s1, String s2, String s3) {
         int N = s1.length();
@@ -37,7 +37,7 @@ class Solution {
 }
 
 
-// 솔루션, DFS, 완전 탐색 5ms
+// O(N*M) 솔루션, DFS, 완전 탐색 5ms
 // visited는 중요하다!!!
 class Solution2 {
     boolean[][] visited;
@@ -72,7 +72,7 @@ class Solution2 {
 }
 
 
-// 완전 탐색 Time Limit Exceeded
+// O(N*M) 완전 탐색 Time Limit Exceeded
 class Solution1 {
     public boolean isInterleave(String s1, String s2, String s3) {
         return dfs(s1, s2, s3, 0, 0, "");
