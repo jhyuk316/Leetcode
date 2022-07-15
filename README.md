@@ -298,6 +298,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 690. Employee Importance - <https://leetcode.com/problems/employee-importance/>
 - [x] O(N) 1319. Number of Operations to Make Network Connected - <https://leetcode.com/problems/number-of-operations-to-make-network-connected/>
 - [x] O(N) 135. Candy - <https://leetcode.com/problems/candy/>
+- [x] O(M\*N) 695. Max Area of Island - <https://leetcode.com/problems/max-area-of-island/>
 
 ### Interval
 
