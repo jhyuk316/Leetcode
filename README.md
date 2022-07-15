@@ -229,8 +229,8 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 226. Invert/Flip Binary Tree - <https://leetcode.com/problems/invert-binary-tree/>
 - [x] O(n) 124. Binary Tree Maximum Path Sum - <https://leetcode.com/problems/binary-tree-maximum-path-sum/>
 - [x] O(N) 102. Binary Tree Level Order Traversal - <https://leetcode.com/problems/binary-tree-level-order-traversal/>
-- [ ] Serialize and Deserialize Binary Tree - <https://leetcode.com/problems/serialize-and-deserialize-binary-tree/>
-- [ ] Subtree of Another Tree - <https://leetcode.com/problems/subtree-of-another-tree/>
+- [x] O(N) 297. Serialize and Deserialize Binary Tree - <https://leetcode.com/problems/serialize-and-deserialize-binary-tree/>
+- [x] O(M\*N) 572. Subtree of Another Tree - <https://leetcode.com/problems/subtree-of-another-tree/>
 - [x] O(N) 105. Construct Binary Tree from Preorder and Inorder Traversal - <https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/>
 - [ ] Validate Binary Search Tree - <https://leetcode.com/problems/validate-binary-search-tree/>
 - [ ] Kth Smallest Element in a BST - <https://leetcode.com/problems/kth-smallest-element-in-a-bst/>
