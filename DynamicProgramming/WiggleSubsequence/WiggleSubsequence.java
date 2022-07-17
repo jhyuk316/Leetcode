@@ -4,30 +4,71 @@ package DynamicProgramming.WiggleSubsequence;
 
 import java.util.Arrays;
 
-// O(N) dp
-// + : dp[0][i] = Math.max(dp[0][i], dp[1][i - 1] + 1); if nums[i] > nums[i - 1]
-// - : dp[1][i] = Math.max(dp[1][i], dp[0][i - 1] + 1); if nums[i] < nums[i - 1]
+// O(N) greedy
 class Solution {
     public int wiggleMaxLength(int[] nums) {
-        int N = nums.length;
-        int[][] dp = new int[2][N];
+        if (nums.length <= 1) {
+            return 1;
+        }
 
-        for (int i = 1; i < N; ++i) {
-            dp[0][i] = dp[0][i - 1];
-            dp[1][i] = dp[1][i - 1];
+        int count = 1;
+        int prev = 0;
+        for (int i = 1; i < nums.length; ++i) {
+            int cur = nums[i] - nums[i - 1];
+            if (prev >= 0 && cur < 0 || prev <= 0 && cur > 0) {
+                prev = cur;
+                count++;
+            }
+        }
+        return count;
+    }
+}
 
+
+// O(N) dp
+class Solution3 {
+    public int wiggleMaxLength(int[] nums) {
+        int up = 0;
+        int down = 0;
+
+        for (int i = 1; i < nums.length; ++i) {
             if (nums[i] > nums[i - 1]) {
-                dp[0][i] = Math.max(dp[0][i], dp[1][i - 1] + 1);
+                up = down + 1;
             }
             if (nums[i] < nums[i - 1]) {
-                dp[1][i] = Math.max(dp[1][i], dp[0][i - 1] + 1);
+                down = up + 1;
+            }
+        }
+        return Math.max(up, down) + 1;
+    }
+}
+
+
+// O(N) dp
+// + : up[i] = down[i - 1] + 1 if nums[i] > nums[i - 1]
+// - : down[i] = up[i - 1] + 1 if nums[i] < nums[i - 1]
+class Solution2 {
+    public int wiggleMaxLength(int[] nums) {
+        int N = nums.length;
+        int[] up = new int[N];
+        int[] down = new int[N];
+
+        for (int i = 1; i < N; ++i) {
+            up[i] = up[i - 1];
+            down[i] = down[i - 1];
+
+            if (nums[i] > nums[i - 1]) {
+                up[i] = down[i - 1] + 1;
+            }
+            if (nums[i] < nums[i - 1]) {
+                down[i] = up[i - 1] + 1;
             }
         }
 
-        System.out.println(Arrays.toString(dp[0]));
-        System.out.println(Arrays.toString(dp[1]));
+        System.out.println(Arrays.toString(up));
+        System.out.println(Arrays.toString(down));
 
-        return Math.max(dp[0][N - 1], dp[1][N - 1]) + 1;
+        return Math.max(up[N - 1], down[N - 1]) + 1;
     }
 }
 
