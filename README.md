@@ -283,6 +283,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N\*M) 97. Interleaving String - <https://leetcode.com/problems/interleaving-string/>
 - [x] O(N) 1696. Jump Game VI - <https://leetcode.com/problems/jump-game-vi/>
 - [x] O(M\*N\*K) 576. Out of Boundary Paths - <https://leetcode.com/problems/out-of-boundary-paths/>
+- [x] O(N\*K) 629. K Inverse Pairs Array - <https://leetcode.com/problems/k-inverse-pairs-array/>
 
 ### Graph
 
