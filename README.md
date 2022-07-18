@@ -265,6 +265,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 백준1931. 회의실 배정 <https://www.acmicpc.net/problem/1931>
 - [x] O(N) 41. First Missing Positive - <https://leetcode.com/problems/first-missing-positive/>
 - [x] O(N) 215. Kth Largest Element in an Array - <https://leetcode.com/problems/kth-largest-element-in-an-array/>
+- [x] O(N) 560. Subarray Sum Equals K - <https://leetcode.com/problems/subarray-sum-equals-k/>
 
 ### Binary
 
@@ -284,6 +285,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 1696. Jump Game VI - <https://leetcode.com/problems/jump-game-vi/>
 - [x] O(M\*N\*K) 576. Out of Boundary Paths - <https://leetcode.com/problems/out-of-boundary-paths/>
 - [x] O(N\*K) 629. K Inverse Pairs Array - <https://leetcode.com/problems/k-inverse-pairs-array/>
+- [x] 1074. Number of Submatrices That Sum to Target - <https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/>
 
 ### Graph
 
