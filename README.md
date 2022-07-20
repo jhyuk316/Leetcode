@@ -325,6 +325,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 1941. Check if All Characters Have Equal Number of Occurrences <https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/>
 - [x] O(n) 13. Roman to Integer <https://leetcode.com/problems/roman-to-integer/>
 - [x] O(n) 395. Longest Substring with At Least K Repeating Characters <https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/>
+- [x] O(M\*N) 792. Number of Matching Subsequences - <https://leetcode.com/problems/number-of-matching-subsequences/>
 
 ### Tree
 
