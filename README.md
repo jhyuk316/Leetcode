@@ -312,6 +312,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 2. Add Two Numbers <https://leetcode.com/problems/add-two-numbers/>
 - [x] O(n) 1290. Convert Binary Number in a Linked List to Integer <https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/>
 - [x] O(M+N) 160. Intersection of Two Linked Lists <https://leetcode.com/problems/intersection-of-two-linked-lists/>
+- [x] O(N) 92. Reverse Linked List II - <https://leetcode.com/problems/reverse-linked-list-ii/>
 
 ### Matrix
 
