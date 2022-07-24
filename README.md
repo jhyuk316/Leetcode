@@ -266,6 +266,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 41. First Missing Positive - <https://leetcode.com/problems/first-missing-positive/>
 - [x] O(N) 215. Kth Largest Element in an Array - <https://leetcode.com/problems/kth-largest-element-in-an-array/>
 - [x] O(N) 560. Subarray Sum Equals K - <https://leetcode.com/problems/subarray-sum-equals-k/>
+- [x] O(M+N) 240. Search a 2D Matrix II - <https://leetcode.com/problems/search-a-2d-matrix-ii/>
 
 ### Binary
 
@@ -313,6 +314,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 1290. Convert Binary Number in a Linked List to Integer <https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/>
 - [x] O(M+N) 160. Intersection of Two Linked Lists <https://leetcode.com/problems/intersection-of-two-linked-lists/>
 - [x] O(N) 92. Reverse Linked List II - <https://leetcode.com/problems/reverse-linked-list-ii/>
+- [x] O(N) 86. Partition List - <https://leetcode.com/problems/partition-list/>
 
 ### Matrix
 
