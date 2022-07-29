@@ -366,6 +366,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - 395번 다듬기.
 - 1146번 풀기.
 - 799, 740 정리.
+- 473 풀이 정리.
 
 ---
 
