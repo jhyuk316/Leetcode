@@ -329,11 +329,13 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 13. Roman to Integer <https://leetcode.com/problems/roman-to-integer/>
 - [x] O(n) 395. Longest Substring with At Least K Repeating Characters <https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/>
 - [x] O(M\*N) 792. Number of Matching Subsequences - <https://leetcode.com/problems/number-of-matching-subsequences/>
+- [x] O(M\*N) 890. Find and Replace Pattern - <https://leetcode.com/problems/find-and-replace-pattern/>
 
 ### Tree
 
 - [x] O(N) 199. Binary Tree Right Side View - https://leetcode.com/problems/binary-tree-right-side-view/
 - [x] O(N) 236. Lowest Common Ancestor of a Binary Tree - <https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/>
+- [x] O(N) 114. Flatten Binary Tree to Linked List - <https://leetcode.com/problems/flatten-binary-tree-to-linked-list/>
 
 ### Heap
 
