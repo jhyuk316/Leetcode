@@ -305,6 +305,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 135. Candy - <https://leetcode.com/problems/candy/>
 - [x] O(M\*N) 695. Max Area of Island - <https://leetcode.com/problems/max-area-of-island/>
 - [x] O(M\*N) 1034. Coloring A Border - <https://leetcode.com/problems/coloring-a-border/>
+- [x] O(N) 1306. Jump Game III - <https://leetcode.com/problems/jump-game-iii/>
 
 ### Interval
 
@@ -330,6 +331,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n) 395. Longest Substring with At Least K Repeating Characters <https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/>
 - [x] O(M\*N) 792. Number of Matching Subsequences - <https://leetcode.com/problems/number-of-matching-subsequences/>
 - [x] O(M\*N) 890. Find and Replace Pattern - <https://leetcode.com/problems/find-and-replace-pattern/>
+- [ ] O(M\*N)? 916. Word Subsets - <https://leetcode.com/problems/word-subsets/>
 
 ### Tree
 
