@@ -360,6 +360,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] 155. Min Stack <https://leetcode.com/problems/min-stack/>
 - [ ] 1146. Snapshot Array <https://leetcode.com/problems/snapshot-array/>
 - [x] 8. String to Integer (atoi) - <https://leetcode.com/problems/string-to-integer-atoi/>
+- [x] 307. Range Sum Query - Mutable -<https://leetcode.com/problems/range-sum-query-mutable/>
 
 ---
 
@@ -369,6 +370,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - 1146번 풀기.
 - 799, 740 정리.
 - 473 풀이 정리.
+- 307 세그먼트 트리 공부하기.
 
 ---
 
