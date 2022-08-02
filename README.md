@@ -287,6 +287,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(M\*N\*K) 576. Out of Boundary Paths - <https://leetcode.com/problems/out-of-boundary-paths/>
 - [x] O(N\*K) 629. K Inverse Pairs Array - <https://leetcode.com/problems/k-inverse-pairs-array/>
 - [x] 1074. Number of Submatrices That Sum to Target - <https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/>
+- [x] 1340. Jump Game V - <https://leetcode.com/problems/jump-game-v/>
 
 ### Graph
 
@@ -306,6 +307,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(M\*N) 695. Max Area of Island - <https://leetcode.com/problems/max-area-of-island/>
 - [x] O(M\*N) 1034. Coloring A Border - <https://leetcode.com/problems/coloring-a-border/>
 - [x] O(N) 1306. Jump Game III - <https://leetcode.com/problems/jump-game-iii/>
+- [x] O(N) 1345. Jump Game IV - <https://leetcode.com/problems/jump-game-iv/>
 
 ### Interval
 
