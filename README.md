@@ -353,6 +353,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(n?) 523. Continuous Subarray Sum - <https://leetcode.com/problems/continuous-subarray-sum/>
 - [x] O(N) 7. Reverse Integer - <https://leetcode.com/problems/reverse-integer/>
 - [x] 462. Minimum Moves to Equal Array Elements II - <https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/>
+- [x] 858. Mirror Reflection - <https://leetcode.com/problems/mirror-reflection/>
 
 ### backtracking
 
