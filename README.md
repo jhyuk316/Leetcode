@@ -289,6 +289,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N\*K) 629. K Inverse Pairs Array - <https://leetcode.com/problems/k-inverse-pairs-array/>
 - [x] 1074. Number of Submatrices That Sum to Target - <https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/>
 - [x] 1340. Jump Game V - <https://leetcode.com/problems/jump-game-v/>
+- [x] 1220. Count Vowels Permutation - <https://leetcode.com/problems/count-vowels-permutation/>
 
 ### Graph
 
