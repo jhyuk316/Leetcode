@@ -268,6 +268,8 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 560. Subarray Sum Equals K - <https://leetcode.com/problems/subarray-sum-equals-k/>
 - [x] O(M+N) 240. Search a 2D Matrix II - <https://leetcode.com/problems/search-a-2d-matrix-ii/>
 - [x] O(N^2\*logN) 378. Kth Smallest Element in a Sorted Matrix - <https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/>
+- [x] O(M\*N) 1074. Number of Submatrices That Sum to Target - <https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/>
+- [x] O(N\*logN) 729. My Calendar I - <https://leetcode.com/problems/my-calendar-i/>
 
 ### Binary
 
@@ -287,9 +289,9 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 1696. Jump Game VI - <https://leetcode.com/problems/jump-game-vi/>
 - [x] O(M\*N\*K) 576. Out of Boundary Paths - <https://leetcode.com/problems/out-of-boundary-paths/>
 - [x] O(N\*K) 629. K Inverse Pairs Array - <https://leetcode.com/problems/k-inverse-pairs-array/>
-- [x] 1074. Number of Submatrices That Sum to Target - <https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/>
-- [x] 1340. Jump Game V - <https://leetcode.com/problems/jump-game-v/>
-- [x] 1220. Count Vowels Permutation - <https://leetcode.com/problems/count-vowels-permutation/>
+- [x] O(N) 1340. Jump Game V - <https://leetcode.com/problems/jump-game-v/>
+- [x] O(N) 1220. Count Vowels Permutation - <https://leetcode.com/problems/count-vowels-permutation/>
+- [x] O(N^2) 823. Binary Trees With Factors - <https://leetcode.com/problems/binary-trees-with-factors/>
 
 ### Graph
 
