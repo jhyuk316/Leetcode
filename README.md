@@ -310,6 +310,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(M\*N) 1034. Coloring A Border - <https://leetcode.com/problems/coloring-a-border/>
 - [x] O(N) 1306. Jump Game III - <https://leetcode.com/problems/jump-game-iii/>
 - [x] O(N) 1345. Jump Game IV - <https://leetcode.com/problems/jump-game-iv/>
+- [x] O(V+E) 2192. All Ancestors of a Node in a Directed Acyclic Graph - <https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/>
 
 ### Interval
 
