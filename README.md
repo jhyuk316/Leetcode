@@ -338,6 +338,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(M\*N) 792. Number of Matching Subsequences - <https://leetcode.com/problems/number-of-matching-subsequences/>
 - [x] O(M\*N) 890. Find and Replace Pattern - <https://leetcode.com/problems/find-and-replace-pattern/>
 - [x] O(M\*N)? 916. Word Subsets - <https://leetcode.com/problems/word-subsets/>
+- [x] O(A\*N\*B+N) 30. Substring with Concatenation of All Words - <https://leetcode.com/problems/substring-with-concatenation-of-all-words/>
 
 ### Tree
 
@@ -379,6 +380,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - 799, 740 정리.
 - 473 풀이 정리.
 - 307 세그먼트 트리 공부하기.
+- 30 풀이 정리.
 
 ---
 
