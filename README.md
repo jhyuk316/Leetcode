@@ -268,6 +268,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 560. Subarray Sum Equals K - <https://leetcode.com/problems/subarray-sum-equals-k/>
 - [x] O(M+N) 240. Search a 2D Matrix II - <https://leetcode.com/problems/search-a-2d-matrix-ii/>
 - [x] O(N^2\*logN) 378. Kth Smallest Element in a Sorted Matrix - <https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/>
+- [x] O(N) 1338. Reduce Array Size to The Half - <https://leetcode.com/problems/reduce-array-size-to-the-half/>
 
 ### Binary
 
