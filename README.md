@@ -268,6 +268,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 560. Subarray Sum Equals K - <https://leetcode.com/problems/subarray-sum-equals-k/>
 - [x] O(M+N) 240. Search a 2D Matrix II - <https://leetcode.com/problems/search-a-2d-matrix-ii/>
 - [x] O(N^2\*logN) 378. Kth Smallest Element in a Sorted Matrix - <https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/>
+- [x] O(N) 1338. Reduce Array Size to The Half - <https://leetcode.com/problems/reduce-array-size-to-the-half/>
 - [x] O(M\*N) 1074. Number of Submatrices That Sum to Target - <https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/>
 - [x] O(N\*logN) 729. My Calendar I - <https://leetcode.com/problems/my-calendar-i/>
 
@@ -312,6 +313,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(M\*N) 1034. Coloring A Border - <https://leetcode.com/problems/coloring-a-border/>
 - [x] O(N) 1306. Jump Game III - <https://leetcode.com/problems/jump-game-iii/>
 - [x] O(N) 1345. Jump Game IV - <https://leetcode.com/problems/jump-game-iv/>
+- [x] O(V+E) 2192. All Ancestors of a Node in a Directed Acyclic Graph - <https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/>
 
 ### Interval
 
@@ -322,6 +324,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(M+N) 160. Intersection of Two Linked Lists <https://leetcode.com/problems/intersection-of-two-linked-lists/>
 - [x] O(N) 92. Reverse Linked List II - <https://leetcode.com/problems/reverse-linked-list-ii/>
 - [x] O(N) 86. Partition List - <https://leetcode.com/problems/partition-list/>
+- [x] O(N) 109. Convert Sorted List to Binary Search Tree - <https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/>
 
 ### Matrix
 
@@ -338,12 +341,14 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(M\*N) 792. Number of Matching Subsequences - <https://leetcode.com/problems/number-of-matching-subsequences/>
 - [x] O(M\*N) 890. Find and Replace Pattern - <https://leetcode.com/problems/find-and-replace-pattern/>
 - [x] O(M\*N)? 916. Word Subsets - <https://leetcode.com/problems/word-subsets/>
+- [x] O(A\*N\*B+N) 30. Substring with Concatenation of All Words - <https://leetcode.com/problems/substring-with-concatenation-of-all-words/>
 
 ### Tree
 
 - [x] O(N) 199. Binary Tree Right Side View - https://leetcode.com/problems/binary-tree-right-side-view/
 - [x] O(N) 236. Lowest Common Ancestor of a Binary Tree - <https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/>
 - [x] O(N) 114. Flatten Binary Tree to Linked List - <https://leetcode.com/problems/flatten-binary-tree-to-linked-list/>
+- [x] O(logN) 235. Lowest Common Ancestor of a Binary Search Tree - <https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/>
 
 ### Heap
 
@@ -361,6 +366,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 ### backtracking
 
 - [x] 52. N-Queens II <https://leetcode.com/problems/n-queens-ii/>
+- [ ] 126. Word Ladder II - <https://leetcode.com/problems/word-ladder-ii/>
 
 ### Implement
 
@@ -378,6 +384,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - 799, 740 정리.
 - 473 풀이 정리.
 - 307 세그먼트 트리 공부하기.
+- 30 풀이 정리.
 
 ---
 
