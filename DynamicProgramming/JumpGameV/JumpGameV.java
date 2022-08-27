@@ -4,6 +4,7 @@ package DynamicProgramming.JumpGameV;
 
 import java.util.Arrays;
 
+// O(N) Memoization
 class Solution {
     int[] jumpCount;
 
