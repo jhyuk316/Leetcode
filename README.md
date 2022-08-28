@@ -271,6 +271,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 - [x] O(N) 1338. Reduce Array Size to The Half - <https://leetcode.com/problems/reduce-array-size-to-the-half/>
 - [x] O(M\*N) 1074. Number of Submatrices That Sum to Target - <https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/>
 - [x] O(N\*logN) 729. My Calendar I - <https://leetcode.com/problems/my-calendar-i/>
+- [x] O(M\*N\*logN) 1329. Sort the Matrix Diagonally - <https://leetcode.com/problems/sort-the-matrix-diagonally/>
 
 ### Binary
 
