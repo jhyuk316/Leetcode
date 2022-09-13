@@ -276,6 +276,7 @@ New Year Gift - Curated List of Top 75 LeetCode Questions to Save Your Time
 ### Binary
 
 - [x] O(n) 260. Single Number III <https://leetcode.com/problems/single-number-iii/>
+- [x] 393. UTF-8 Validation - <https://leetcode.com/problems/utf-8-validation/>
 
 ### Dynamic Programming
 
