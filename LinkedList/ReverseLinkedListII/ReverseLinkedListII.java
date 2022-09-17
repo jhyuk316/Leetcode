@@ -5,8 +5,43 @@ package LinkedList.ReverseLinkedListII;
 
 import LinkedList.ListNode;
 
-// O(N) solution
+// O(N) solution 후 정리
 class Solution {
+    public ListNode reverseBetween(ListNode head, int left, int right) {
+        if (head == null) {
+            return null;
+        }
+
+        ListNode dummy = new ListNode();
+        dummy.next = head;
+
+        ListNode frontTail = dummy;
+        ListNode cur = head;
+
+        for (int i = 0; i < left - 1; ++i) {
+            frontTail = cur;
+            cur = cur.next;
+        }
+        ListNode midTail = cur;
+
+        ListNode prev = null;
+        ListNode next = null;
+        for (int i = left; i < right; ++i) {
+            next = cur.next;
+            cur.next = prev;
+            prev = cur;
+            cur = next;
+        }
+
+        midTail.next = cur;
+        frontTail.next = prev;
+        return dummy.next;
+    }
+}
+
+
+// O(N) solution 참고 후 수정
+class Solution1 {
     public ListNode reverseBetween(ListNode head, int left, int right) {
         if (head == null) {
             return null;
