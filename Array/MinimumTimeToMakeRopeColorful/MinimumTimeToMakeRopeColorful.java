@@ -1,4 +1,4 @@
-package Uncategorized.MinimumTimeToMakeRopeColorful;
+package Array.MinimumTimeToMakeRopeColorful;
 // 1578. Minimum Time to Make Rope Colorful
 // https://leetcode.com/problems/minimum-time-to-make-rope-colorful/?envType=daily-question&envId=2023-12-27
 
