@@ -31,12 +31,10 @@ class Solution {
 
 
         int depth = 0;
-        List<Integer> result = new LinkedList<>();
         while (!queue.isEmpty()) {
-            result = new LinkedList<>(queue);
-            System.out.println("result = " + result);
+            Deque<Integer> newQueue = new LinkedList<>();
 
-            int size = queue.size();
+            System.out.println("result = " + queue);
 
             queue.forEach(node -> {
                         visited[node] = true;
@@ -45,22 +43,25 @@ class Solution {
                         }
                     }
             );
-
-            for (int i = 0; i < size; ++i) {
-                Integer node = queue.pollFirst();
-                for (Integer next : map.get(node)) {
-                    if (map.get(next).size() <= 1 && !visited[next]) {
-                        visited[next] = true;
-                        queue.add(next);
+            queue.forEach(node -> {
+                        for (Integer next : map.get(node)) {
+                            if (map.get(next).size() <= 1 && !visited[next]) {
+                                visited[next] = true;
+                                newQueue.add(next);
+                            }
+                        }
                     }
-                }
+
+            );
+
+            if (newQueue.isEmpty()) {
+                return queue.stream().toList();
             }
 
+            queue = newQueue;
             depth++;
         }
-        // System.out.println("depth = " + depth);
-
-        return result;
+        return null;
     }
 }
 
