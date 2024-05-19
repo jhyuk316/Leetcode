@@ -55,7 +55,7 @@ class KnapsackProblem {
             for (int j = 1; j < K + 1; ++j) {
                 Item item = items.get(i - 1);
 
-                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                dp[i][j] = dp[i][j - 1];    // i 번째 아이템이 안들어 갔을 때가 기본값임.
                 if (j - item.getWeight() >= 0) {
                     dp[i][j] = Math.max(dp[i][j], dp[i - 1][j - item.getWeight()] + item.getValue());
                 }
