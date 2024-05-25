@@ -1,4 +1,4 @@
-//go:build DistributeCoinsInBinaryTree
+//go:build DistributeCoinsInBinaryTree_noTemp
 
 package DistributeCoinsInBinaryTree
 
@@ -12,12 +12,9 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-var total = 0
-
 func distributeCoins(root *TreeNode) int {
-	total = 0
-	dfs(root)
-	return total
+	_, moves := dfs(root)
+	return moves
 }
 
 func absInt(x int) int {
@@ -27,18 +24,14 @@ func absInt(x int) int {
 	return x
 }
 
-func dfs(node *TreeNode) int {
-	result := node.Val - 1
-	if node.Left != nil {
-		left := dfs(node.Left)
-		total += absInt(left)
-		result += left
-	}
-	if node.Right != nil {
-		right := dfs(node.Right)
-		total += absInt(right)
-		result += right
+func dfs(node *TreeNode) (int, int) {
+	if node == nil {
+		return 0, 0
 	}
 
-	return result
+	leftCoins, leftMoves := dfs(node.Left)
+	rightCoins, rightMoves := dfs(node.Right)
+	coins := node.Val - 1 + leftCoins + rightCoins
+	moves := absInt(coins) + leftMoves + rightMoves
+	return coins, moves
 }
