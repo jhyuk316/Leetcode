@@ -12,22 +12,17 @@ type position struct {
 }
 
 func kthSmallestPrimeFraction(arr []int, k int) []int {
-	var fractions = make(map[float64]position, 0)
+	fractions := []position{}
 
-	for i, num := range arr {
+	for i := 0; i < len(arr)-1; i++ {
 		for j := i + 1; j < len(arr); j++ {
-			fractions[float64(num)/float64(arr[j])] = position{i, j}
+			fractions = append(fractions, position{i, j})
 		}
 	}
-	//fmt.Println(fractions)
 
-	sortedKey := make([]float64, 0)
-	for key := range fractions {
-		sortedKey = append(sortedKey, key)
-	}
+	sort.Slice(fractions, func(i, j int) bool {
+		return float64(arr[fractions[i].x])/float64(arr[fractions[i].y]) < float64(arr[fractions[j].x])/float64(arr[fractions[j].y])
+	})
 
-	sort.Float64s(sortedKey)
-	//fmt.Println(sortedKey)
-
-	return []int{arr[fractions[sortedKey[k-1]].x], arr[fractions[sortedKey[k-1]].y]}
+	return []int{arr[fractions[k-1].x], arr[fractions[k-1].y]}
 }
