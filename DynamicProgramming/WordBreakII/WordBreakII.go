@@ -5,30 +5,29 @@ package WordBreakII
 
 import "strings"
 
-var dp map[string][]string
+var memo map[string][]string
 
 func wordBreak(s string, wordDict []string) []string {
-	dp = make(map[string][]string)
+	memo = make(map[string][]string)
 	return dfs(s, wordDict)
 }
 
 func dfs(s string, wordDict []string) []string {
-	if res, ok := dp[s]; ok {
+	if res, ok := memo[s]; ok {
 		return res
 	}
 
-	result := make([]string, 0)
+	var result []string
 	for _, word := range wordDict {
 		if strings.HasPrefix(s, word) {
-			length := len(word)
-			if len(s) == length {
+			wordLength := len(word)
+			if len(s) == wordLength {
 				result = append(result, word)
-				continue
-			}
-
-			subString := dfs(s[length:], wordDict)
-			for _, sub := range subString {
-				result = append(result, word+" "+sub)
+			} else {
+				postStrings := dfs(s[wordLength:], wordDict)
+				for _, post := range postStrings {
+					result = append(result, word+" "+post)
+				}
 			}
 		}
 	}
