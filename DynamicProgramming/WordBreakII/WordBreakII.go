@@ -1,3 +1,5 @@
+//go:build WordBreakII
+
 package WordBreakII
 
 // 140. Word Break II
