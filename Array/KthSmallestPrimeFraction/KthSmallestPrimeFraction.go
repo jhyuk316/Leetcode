@@ -5,10 +5,6 @@ package KthSmallestPrimeFraction
 // 786. K-th Smallest Prime Fraction
 // https://leetcode.com/problems/k-th-smallest-prime-fraction/description/
 
-import (
-	"sort"
-)
-
 type Primes struct {
 	x, y int
 }
@@ -22,8 +18,8 @@ func kthSmallestPrimeFraction(arr []int, k int) []int {
 		}
 	}
 
-	sort.Slice(primes, func(i, j int) bool {
-		return float64(primes[i].x)/float64(primes[i].y) < float64(primes[j].x)/float64(primes[j].y)
+	slices.SortFunc(primes, func(i, j Primes) int {
+		return cmp.Compare(float64(primes[i].x)/float64(primes[i].y), float64(primes[j].x)/float64(primes[j].y))
 	})
 
 	return []int{primes[k-1].x, primes[k-1].y}
